@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
