@@ -1,50 +1,53 @@
 @import "tailwindcss";
 
 .text-stroke1 {
-    color: #1b1b1b!important;
-    transition: all 0.3s ease!important;
+    color: #1b1b1b;
+    transition: all 0.3s ease;
   }
-  .text-stroke1:hover {
-    -webkit-text-stroke: 1.5px #1b1b1b!important;
-    color: transparent!important;
-    transition: all 0.3s ease!important;
-  }
+  /* .text-stroke1:hover {
+    -webkit-text-stroke: 1.5px #1b1b1b;
+    color: transparent;
+    transition: all 0.3s ease;
+  } */
   .text-stroke1:hover ~ .text-stroke2 {
     color: #1b1b1b!important;
   }
 
 
   .text-stroke2 {
-    -webkit-text-stroke: 1.5px #1b1b1b!important;
-    color: transparent!important;
-    transition: all 0.3s ease!important;
+    -webkit-text-stroke: 1.5px #1b1b1b;
+    color: transparent;
+    transition: all 0.3s ease;
   }
   .text-stroke2:hover {
-    -webkit-text-stroke: 1px #1b1b1b!important;
-    color: #1b1b1b!important;
+    -webkit-text-stroke: 1px #1b1b1b;
+    color: #1b1b1b;
   }
 
 
 
   .hero-btn-1{
-    transition: all 0.3s ease!important;
-    border: 1.5px solid #1b1b1b!important;
+    transition: all 0.3s ease;
+    border: 1.5px solid #1b1b1b;
   }
    .hero-btn-1:hover{
-     /* background-color: white!important; */
-     border: 1.5px solid #1b1b1b!important;
-     /* color: #1b1b1b!important; */
-     padding: 0px 50px!important;
+     border: 1.5px solid #1b1b1b;
 
    }
    .hero-btn-2{
-    transition: all 0.3s ease!important;
-    border: 1.5px solid #1b1b1b!important;
+    transition: all 0.3s ease;
+    border: 1.5px solid #1b1b1b;
     
   }
    .hero-btn-2:hover{
-     /* background-color: #1b1b1b!important; */
-     border: 1.5px solid #1b1b1b!important;
-     /* color: white!important; */
-     padding: 0px 50px!important;
+     border: 1.5px solid #1b1b1b;
    }
+
+
+
+
+
+
+
+
+
