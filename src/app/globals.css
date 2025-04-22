@@ -4,11 +4,41 @@
     color: #1b1b1b;
     transition: all 0.3s ease;
   }
-  .text-stroke1:hover {
+  /* .text-stroke1:hover {
     -webkit-text-stroke: 1.5px #1b1b1b;
     color: transparent;
     transition: all 0.3s ease;
-  }
+  } */
+.stroke01{transition: all 0.2s ease;}
+.stroke01:hover{ -webkit-text-stroke: 1.5px #1b1b1b; color: transparent;}
+.stroke02{transition: all 0.2s ease;}
+.stroke02:hover{ -webkit-text-stroke: 1.5px #1b1b1b; color: transparent;}
+.stroke03{transition: all 0.2s ease;}
+.stroke03:hover{ -webkit-text-stroke: 1.5px #1b1b1b; color: transparent;}
+.stroke04{transition: all 0.2s ease;}
+.stroke04:hover{ -webkit-text-stroke: 1.5px #1b1b1b; color: transparent;}
+.stroke05{transition: all 0.2s ease;}
+.stroke05:hover{ -webkit-text-stroke: 1.5px #1b1b1b; color: transparent;}
+.stroke06{transition: all 0.2s ease;}
+.stroke06:hover{ -webkit-text-stroke: 1.5px #1b1b1b; color: transparent;}
+.stroke07{transition: all 0.2s ease;}
+.stroke07:hover{ -webkit-text-stroke: 1.5px #1b1b1b; color: transparent;}
+.stroke08{transition: all 0.2s ease;}
+.stroke08:hover{ -webkit-text-stroke: 1.5px #1b1b1b; color: transparent;}
+.stroke09{transition: all 0.2s ease;}
+.stroke09:hover{ -webkit-text-stroke: 1.5px #1b1b1b; color: transparent;}
+.stroke10{transition: all 0.2s ease;}
+.stroke10:hover{ -webkit-text-stroke: 1.5px #1b1b1b; color: transparent;}
+.stroke11{transition: all 0.2s ease;}
+.stroke11:hover{ -webkit-text-stroke: 1.5px #1b1b1b; color: transparent;}
+.stroke12{transition: all 0.2s ease;}
+.stroke12:hover{ -webkit-text-stroke: 1.5px #1b1b1b; color: transparent;}
+
+
+
+
+
+
   .text-stroke1:hover ~ .text-stroke2 {
     color: #1b1b1b!important;
   }
