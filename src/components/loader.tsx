@@ -22,7 +22,7 @@ export default function Loader() {
               initial={{ opacity: 20, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut", delay: 1 }}
-              className="text-[white] text-4xl font-bold"
+              className="text-[#F5F5DC] text-4xl font-bold"
             >
            <svg
             width="400"

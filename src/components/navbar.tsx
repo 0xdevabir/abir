@@ -1,17 +1,50 @@
 'use client';
-// import Image from "next/image";
 import Link from "next/link";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   // Toggle the menu state (open/close)
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  // Control navbar visibility based on scroll direction
+  useEffect(() => {
+    const controlNavbar = () => {
+      const currentScrollY = window.scrollY;
+      
+      // Show navbar when scrolling up
+      if (currentScrollY < lastScrollY) {
+        setShowNavbar(true);
+      } 
+      // Hide navbar when scrolling down and not at the top
+      else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setShowNavbar(false);
+      }
+      
+      // Update last scroll position
+      setLastScrollY(currentScrollY);
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', controlNavbar);
+
+    // Cleanup event listener
+    return () => {
+      window.removeEventListener('scroll', controlNavbar);
+    };
+  }, [lastScrollY]);
+
   return (
    <div className="">
-     <nav className="bg-transparent absolute top-0 left-0 w-full z-30 text-[#1b1b1b] p-[12px] sm:p-[6px]">
+     <nav className={`
+        bg-transparent w-full z-30 text-[#1b1b1b] p-[12px] sm:p-[6px] 
+        transition-all duration-300
+        ${showNavbar ? 'fixed top-0 left-0' : 'absolute transform -translate-y-full'}
+        ${lastScrollY > 100 && showNavbar ? 'bg-transparent' : ''}
+      `}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-[8vw] sm:text-[4vw] font-bold z-20">
@@ -84,7 +117,7 @@ export default function Navbar() {
 
       {/* Mobile Menu with Smooth Transition */}
       <div
-        className={`z-10 md:hidden fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 transition-all duration-500 ${
+        className={`z-10 md:hidden fixed inset-0 bg-[#1b1b1b] bg-opacity-90 flex flex-col items-center justify-center space-y-6 transition-all duration-500 ${
           isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
       >
@@ -125,6 +158,6 @@ export default function Navbar() {
         </Link>
       </div>
     </nav>
-  </div>
+   </div>
   );
 }
