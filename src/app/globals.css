@@ -66,3 +66,31 @@
    .imageShowHover:hover + .theImageSection{
     z-index: 10;
    } */
+
+
+
+
+
+
+
+
+   /* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; /* for horizontal scroll */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 export default function ImageCursorDiv() {
@@ -39,11 +40,14 @@ export default function ImageCursorDiv() {
           transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateX(${translateX}px) translateY(${translateY}px)`
         }}
       >
-        <img 
-          src="/abir-animated-rb.png"
-          alt="abir-animated-rb.png" 
-          className="w-full h-full object-cover z-[5]"
-        />
+       
+        <Image
+            src="/abir-animated-rb.png"
+            alt="abir-animated-rb.png" 
+            width={500}
+            height={500}
+            className="w-full h-full object-cover z-[5] "
+            />
       </div>
     </div>
   );
