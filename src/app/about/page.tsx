@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import Loader from '@/components/loader';
 
 export default function About() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [, setIsLoading] = useState(true);
 
   useEffect(() => {
     AOS.init({

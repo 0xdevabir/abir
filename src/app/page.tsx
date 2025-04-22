@@ -17,7 +17,7 @@ export default function Home() {
 
 
 
-  const [isLoading, setIsLoading] = useState(true);
+  const [,setIsLoading] = useState(true);
 
   useEffect(() => {
     AOS.init({
