@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Loader from '@/components/loader';
+import Loadertwo from '@/components/loadertwo';
 
 export default function About() {
   const [, setIsLoading] = useState(true);
@@ -23,7 +23,7 @@ export default function About() {
 
   return (
     <div className="">
-      <Loader/>
+      <Loadertwo/>
       <div className="fixed top-0 left-0 w-full h-full bg-[white] z-0 flex items-center justify-center" data-aos="fade-up">
         <h1 className="text-4xl font-extrabold text-gray-800" >WebNest</h1>
       </div>
