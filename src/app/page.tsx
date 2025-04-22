@@ -44,8 +44,8 @@ export default function Home() {
           <p className='text-center text-[15vw] md:text-[10vw] font-[700] text-stroke2 cursor-pointer z-10' data-aos='fade-left' data-aos-delay="1600">& <span className='sm:hidden'> <br className='sm:hidde' /> </span> App Developer</p>
         </div>
         <div className="flex justify-center gap-[5vw] sm:gap-[1vw] mt-[5vh] md:mt-[12vh]">
-          <button className='text-[16px] sm:text-[24px] bg-[#1b1b1b] text-white px-[20px] sm:px-[32px] py-[8px] sm:py-[12px] rounded-md cursor-pointer hero-btn-1' data-aos='fade-up' data-aos-delay="1600">Resume</button>
-          <button className='text-[16px] sm:text-[24px] bg-[white] text-[#1b1b1b] px-[20px] sm:px-[32px] py-[8px] sm:py-[12px] rounded-md cursor-pointer hero-btn-2' data-aos='fade-up' data-aos-delay="1600">Contact</button>
+          <button className='text-[16px] sm:text-[24px] bg-[#1b1b1b] text-white px-[20px] sm:px-[32px] py-[8px] sm:py-[12px] rounded-md cursor-pointer hero-btn-1' data-aos='fade-up' data-aos-delay="2200">Resume</button>
+          <button className='text-[16px] sm:text-[24px] bg-[white] text-[#1b1b1b] px-[20px] sm:px-[32px] py-[8px] sm:py-[12px] rounded-md cursor-pointer hero-btn-2' data-aos='fade-up' data-aos-delay="2500">Contact</button>
         </div>
       </div>
     </div>
