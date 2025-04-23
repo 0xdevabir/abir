@@ -189,3 +189,39 @@
     transform: translateX(-100%);
   }
 }
+
+
+
+
+
+
+
+
+
+
+.tech-stack-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.tech-stack-container::before,
+.tech-stack-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.tech-stack-container::before {
+  left: 0;
+  background: linear-gradient(to right, #5A4B3C 0%, transparent 100%);
+}
+
+.tech-stack-container::after {
+  right: 0;
+  background: linear-gradient(to left, #5A4B3C 0%, transparent 100%);
+}

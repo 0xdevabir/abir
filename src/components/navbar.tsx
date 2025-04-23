@@ -51,7 +51,7 @@ export default function Navbar() {
             <svg
             viewBox="200 -25 190 180"
             xmlns="http://www.w3.org/2000/svg"
-            className={`looka-1j8o68f w-[200px] h-[60px] md:hidden ${isMenuOpen ? 'text-white' : 'text-[#1b1b1b]'}`}
+            className={`looka-1j8o68f w-[200px] h-[50px] md:hidden ${isMenuOpen ? 'text-white' : 'text-[#1b1b1b]'}`}
           >
             <g transform="matrix(6.5,0,0,6.5,5,-13)">
               {/* <!-- A --> */}
@@ -71,7 +71,7 @@ export default function Navbar() {
           <svg
             viewBox="50 -35 190 200"
             xmlns="http://www.w3.org/2000/svg"
-            className={`looka-1j8o68f w-[200px] h-[120px] hidden md:block ${isMenuOpen ? 'text-white' : 'text-[#1b1b1b]'}`}
+            className={`looka-1j8o68f w-[200px] h-[90px] hidden md:block ${isMenuOpen ? 'text-white' : 'text-[#1b1b1b]'}`}
           >
             <g transform="matrix(6.5,0,0,6.5,5,-13)">
               {/* <!-- A --> */}

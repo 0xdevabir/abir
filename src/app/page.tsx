@@ -8,6 +8,7 @@ import MyImage from '@/components/myimage';
 import Image from 'next/image';
 import CountUp from '@/components/countup';
 import Techstack from '@/components/techstack';
+import Projects from '@/components/projects';
 
 
 const oswald = Oswald({
@@ -120,14 +121,15 @@ export default function Home() {
         </div>
 
         {/* N E X T */}
-
-        <div className="bg-[#E50914] h-[100vh] relative z-20 flex flex-col justify-center items-center">
-          <p className='text-[80px] font-[700] text-white'>Hello</p>
-          <p className='text-[60px] font-[700] text-stroke3'>Developer</p>
+        {/* bg-gradient-to-b from-[#D2B48C] to-[#F5F5DC] */}
+        <div className="bg-[white] h-[120vh] relative z-20 flex flex-col overflow-hidden">
+          {/* <p className='text-[80px] font-[700] text-white'>Hello</p>
+          <p className='text-[60px] font-[700] text-stroke3'>Developer</p> */}
+          <Projects/>
         </div>
 
 
-        <div className="bg-[#5D737E] h-[100vh] relative z-20 flex flex-col justify-center items-center">
+        <div className="bg-gradient-to-b from-[#F5F5DC] to-[#F5F5DC] h-[100vh] relative z-20 flex flex-col justify-center items-center">
           <p className='text-[80px] font-[700] text-white'>Hello</p>
           <p className='text-[60px] font-[700] text-stroke3'>Developer</p>
         </div>
