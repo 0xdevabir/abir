@@ -124,3 +124,68 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
+
+
+
+
+
+
+
+
+/* Tech Stack Carousel Styles */
+.tech-stack-section {
+  /* padding: 40px 0; */
+}
+
+/* .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2rem;
+} */
+
+.tech-stack-container {
+  width: 100%;
+  overflow: hidden;
+  /* background-color: white; */
+  /* padding: 20px 0; */
+  /* box-shadow: 0 2px 10px rgba(0,0,0,0.1); */
+  border-radius: 8px;
+  position: relative;
+}
+
+.tech-stack-scroll {
+  display: flex;
+  width: max-content; /* To ensure it takes as much width as needed */
+  animation: scrollTech 50s linear infinite;
+}
+
+/* Creates a duplicate set of icons to create seamless loop */
+.tech-stack-scroll-inner {
+  display: flex;
+  align-items: center;
+  /* padding: 0 20px; */
+}
+
+.tech-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  /* box-shadow: 0 3px 6px rgba(0,0,0,0.1); */
+  transition: transform 0.3s ease;
+}
+
+@keyframes scrollTech {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Move to the left by the width of one set of icons */
+    transform: translateX(-100%);
+  }
+}
