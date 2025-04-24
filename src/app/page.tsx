@@ -65,8 +65,8 @@ export default function Home() {
         </div>
 
         {/* A B O U T */}
-        <div className="bg-[#D2B48C] h-auto xl:h-[100vh] relative z-20 px-[4vh] md:px-[10vh] py-[6vh]">
-          <p className='text-[8vh] sm:text-[10vh] font-[700] text-stroke3'>About Me</p>
+        <div className="bg-[#D2B48C] h-auto relative z-20 px-[4vh] md:px-[10vh] py-[6vh] lg:py-[14vh]">
+          <p className='text-[8vh] sm:text-[10vh] font-[700] text-stroke3 pb-[1vh]'>About Me</p>
 
           <div className="lg:grid grid-cols-5 gap-[1vw]">
             <div className="col-span-3 p-[4vh] md:p-[5vh] rounded-xl shadow-lg bg-[#5A4B3C]">
