@@ -10,7 +10,6 @@ import CountUp from '@/components/countup';
 import Techstack from '@/components/techstack';
 import Projects from '@/components/projects';
 
-
 const oswald = Oswald({
   subsets: ['latin'],
   weight: ['300', '400', '500', '700',],
@@ -65,16 +64,16 @@ export default function Home() {
         </div>
 
         {/* A B O U T */}
-        <div className="bg-[#D2B48C] h-auto relative z-20 px-[4vh] md:px-[10vh] py-[6vh] lg:py-[14vh]">
-          <p className='text-[8vh] sm:text-[10vh] font-[700] text-stroke3 pb-[1vh]'>About Me</p>
+        <div className="bg-[#1b1b1b] h-auto relative z-20 px-[4vh] md:px-[10vh] py-[6vh] lg:py-[14vh]">
+          <p className='text-[8vh] sm:text-[10vh] font-[700] text-stroke3 pb-[1vh]' data-aos="fade-in" data-aos-delay='500'>About Me</p>
 
           <div className="lg:grid grid-cols-5 gap-[1vw]">
-            <div className="col-span-3 p-[4vh] md:p-[5vh] rounded-xl shadow-lg bg-[#5A4B3C]">
+            <div className="col-span-3 p-[4vh] md:p-[5vh] rounded-2xl shadow-lg bg-gradient-to-t to-[#252525] from-[#202020]" data-aos="fade-up">
               <p className='text-[16px] md:text-[22px] font-[500] text-[#F5F5F5]'>Hi, I’m Abir!</p>  
               <p className='text-[16px] md:text-[22px] font-[500] text-[#F5F5F5] pt-[2vh]'>I’m a web developer who loves creating clean, fast, and user-friendly websites. I specialize in building web apps with Next.js, focusing on performance, design, and making sure everything works smoothly for users.</p>  
               <p className='text-[16px] md:text-[22px] font-[500] text-[#F5F5F5] pt-[2vh]'>I’m also the founder of WebNest, where I help businesses and brands turn their ideas into functional and beautiful digital products. If you’ve got a project in mind, I’d love to bring it to life!</p>  
             </div>
-            <div className="col-span-2 p-[5vh] rounded-xl shadow-lg bg-[#5A4B3C] flex justify-center items-center mt-[4vh] lg:mt-0">
+            <div className="col-span-2 p-[5vh] rounded-2xl shadow-lg bg-gradient-to-t to-[#252525] from-[#202020] flex justify-center items-center mt-[4vh] lg:mt-0" data-aos="fade-up">
               <Image
                 src="/abir.png"
                 alt="Abir"
@@ -88,25 +87,25 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-4 md:grid-cols-5 gap-[1vw] mt-[1.5vh]">
-              <div className="col-span-2 md:col-span-1 p-[5vh] rounded-xl shadow-lg bg-[#5A4B3C] flex justify-center items-center">
+              <div className="col-span-2 md:col-span-1 p-[5vh] rounded-2xl shadow- bg-gradient-to-t to-[#252525] from-[#202020] flex justify-center items-center" data-aos="fade-up">
                 <div className="text-center">
                   <p className='text-[6vh] font-[700] text-[#F5F5F5]'> <CountUp end={60} duration={2000}/>+</p>
                   <p className='text-[18px] md:text-[20px] lg:text-[22px] font-[500] text-[#F5F5F5]'>Completed <br /> Projects</p>
                 </div>
               </div>
-              <div className="col-span-2 md:col-span-1 p-[5vh] rounded-xl shadow-lg bg-[#5A4B3C] flex justify-center items-center">
+              <div className="col-span-2 md:col-span-1 p-[5vh] rounded-2xl shadow-xl bg-gradient-to-t to-[#252525] from-[#202020] flex justify-center items-center" data-aos="fade-up" data-aos-delay='100'>
                   <div className="text-center">
                     <p className='text-[6vh] font-[700] text-[#F5F5F5]'> <CountUp end={7} duration={1000}/>+</p>
                     <p className='text-[18px] md:text-[20px] lg:text-[22px] font-[500] text-[#F5F5F5]'>Freelance <br /> Years</p>
                   </div>
               </div>
-              <div className="col-span-2 md:col-span-1 p-[5vh] rounded-xl shadow-lg bg-[#5A4B3C] flex justify-center items-center">
+              <div className="col-span-2 md:col-span-1 p-[5vh] rounded-2xl shadow-xl bg-gradient-to-t to-[#252525] from-[#202020] flex justify-center items-center" data-aos="fade-up" data-aos-delay='200'>
                   <div className="text-center">
                     <p className='text-[6vh] font-[700] text-[#F5F5F5]'> <CountUp end={25} duration={1000}/>+</p>
                     <p className='text-[18px] md:text-[20px] lg:text-[22px] font-[500] text-[#F5F5F5]'>Clients <br /> Served</p>
                   </div>
               </div>
-              <div className="col-span-2 md:col-span-2 pt-[3vh] rounded-xl shadow-lg bg-[#5A4B3C] flex justify-center">
+              <div className="col-span-2 md:col-span-2 pt-[3vh] rounded-2xl shadow-xl bg-gradient-to-t to-[#252525] from-[#202020] flex justify-center" data-aos="fade-up" data-aos-delay='300'>
                   <div className="w-[100%] overflow-hidden text-center">
                     <p className='text-[18px] md:text-[20px] lg:text-[22px] font-[500] text-[#F5F5F5]'>My Tech Stack</p>
                      
@@ -122,17 +121,14 @@ export default function Home() {
 
         {/* N E X T */}
         {/* bg-gradient-to-b from-[#D2B48C] to-[#F5F5DC] */}
-        <div className="bg-[white] h-[120vh] relative z-20 flex flex-col overflow-hidden">
+        {/* <div className="bg-[#1b1b1b] h-[120vh] relative z-20 flex flex-col overflow-hidden"> */}
           {/* <p className='text-[80px] font-[700] text-white'>Hello</p>
           <p className='text-[60px] font-[700] text-stroke3'>Developer</p> */}
-          <Projects/>
-        </div>
+          {/* <Projects/> */}
+        {/* </div> */}
 
-
-        <div className="bg-gradient-to-b from-[#F5F5DC] to-[#F5F5DC] h-[100vh] relative z-20 flex flex-col justify-center items-center">
-          <p className='text-[80px] font-[700] text-white'>Hello</p>
-          <p className='text-[60px] font-[700] text-stroke3'>Developer</p>
-        </div>
+        {/* P R O J E C T S */}
+        <Projects/>
 
       </div>
     </div>

@@ -45,7 +45,7 @@ export default function Navbar() {
         ${showNavbar ? 'fixed top-0 left-0' : 'absolute transform -translate-y-full'}
         ${lastScrollY > 100 && showNavbar ? 'bg-transparent' : ''}
       `}>
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="max-w-7xl mx-auto flex justify-between items-center bg-[#F5F5DC] pr-[2.5vw] rounded-4xl">
         {/* Logo */}
         <Link href="/" className="text-[8vw] sm:text-[4vw] font-bold z-20">
             <svg
@@ -100,17 +100,17 @@ export default function Navbar() {
 
         {/* Hamburger Icon */}
         <div
-          className="md:hidden flex flex-col justify-between items-center space-y-2 w-8 h-8 cursor-pointer relative z-20"
+          className="md:hidden flex flex-col justify-between items-center space-y-2 w-8 h-7 cursor-pointer relative z-20"
           onClick={toggleMenu}
         >
           <div
-            className={`w-8 h-1 bg-[black] rounded-full transform transition duration-300 ease-in-out ${isMenuOpen ? 'rotate-45 translate-y-2 bg-white' : ''}`}
+            className={`w-6 h-2 bg-[black] rounded-full transform transition duration-300 ease-in-out ${isMenuOpen ? 'rotate-45 translate-y-2 bg-white' : ''}`}
           ></div>
           <div
-            className={`w-8 h-1 bg-[black] rounded-full transition duration-300 ease-in-out ${isMenuOpen ? 'opacity-0' : ''}`}
+            className={`w-8 h-2 bg-[black] rounded-full transition duration-300 ease-in-out ${isMenuOpen ? 'opacity-0' : ''}`}
           ></div>
           <div
-            className={`w-8 h-1 bg-[black] rounded-full transform transition duration-300 ease-in-out ${isMenuOpen ? '-rotate-45 -translate-y-2 bg-white' : ''}`}
+            className={`w-6 h-2 bg-[black] rounded-full transform transition duration-300 ease-in-out ${isMenuOpen ? '-rotate-45 -translate-y-2 bg-white' : ''}`}
           ></div>
         </div>
       </div>
