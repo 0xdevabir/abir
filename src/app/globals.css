@@ -225,3 +225,23 @@
   right: 0;
   background: linear-gradient(to left, #202020 0%, transparent 100%);
 }
+
+
+
+
+
+
+
+
+
+
+.ProjectCardContent {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.ProjectCard:hover .ProjectCardContent {
+  opacity: 1;
+  visibility: visible;
+}
