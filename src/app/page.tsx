@@ -9,7 +9,7 @@ import Image from 'next/image';
 import CountUp from '@/components/countup';
 import Techstack from '@/components/techstack';
 import Projects from '@/components/projects';
-
+import Link from 'next/link';
 const oswald = Oswald({
   subsets: ['latin'],
   weight: ['300', '400', '500', '700',],
@@ -55,7 +55,7 @@ export default function Home() {
                 <div className=' relative z-[0] imageShowHover' data-aos='fade-left' data-aos-delay="1600"><p className=' text-center text-[15vw] md:text-[10vw] font-[700]  cursor-pointer'><span className='text-stroke2'>& <span className='sm:hidden'> <br className='sm:hidde' /> </span> App Developer</span></p></div>
               </div>
               <div className="flex justify-center gap-[5vw] sm:gap-[1vw] mt-[5vh] md:mt-[12vh] relative z-30">
-                <div data-aos='fade-up' data-aos-delay="2200"><button className='text-[16px] sm:text-[24px] bg-[#1b1b1b] text-white px-[20px] sm:px-[32px] hover:px-[50px] py-[8px] sm:py-[12px] rounded-md cursor-pointer hero-btn-1'>Resume</button></div>
+                <div data-aos='fade-up' data-aos-delay="2200"><button className='text-[16px] sm:text-[24px] bg-[#1b1b1b] text-white px-[20px] sm:px-[32px] hover:px-[50px] py-[8px] sm:py-[12px] rounded-md cursor-pointer hero-btn-1'><Link href="./ABIR_HOSSAIN_RESUME.pdf" target='_blank' title='RESUME'>Resume</Link></button></div>
                 <div data-aos='fade-up' data-aos-delay="2500"><button className='text-[16px] sm:text-[24px] bg-[transparent] text-[#1b1b1b] px-[20px] sm:px-[32px] hover:px-[50px] py-[8px] sm:py-[12px] rounded-md cursor-pointer hero-btn-2'>Contact</button></div>
               </div>
               <div className="fixed bottom-0 w-[100vw] hidden md:block theImageSection md:flex justify-center" data-aos='fade-up' data-aos-delay="2000"><div className=""><MyImage/></div></div> 
