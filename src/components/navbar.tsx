@@ -40,7 +40,7 @@ export default function Navbar() {
   return (
    <div className="">
      <nav className={`
-        bg-transparent w-full z-30 text-[#1b1b1b] p-[12px] sm:p-[6px] 
+        bg-transparent w-full z-60 text-[#1b1b1b] p-[12px] sm:p-[6px] 
         transition-all duration-300
         ${showNavbar ? 'fixed top-0 left-0' : 'absolute transform -translate-y-full'}
         ${lastScrollY > 100 && showNavbar ? 'bg-transparent' : ''}
@@ -91,11 +91,11 @@ export default function Navbar() {
 
         {/* Desktop Navbar Links */}
         <div className="hidden md:flex space-x-10 text-[20px] font-[600]">
-          <Link href="/" className="hover:text-[#96eefb] transition-all">Home</Link>
-          <Link href="/about" className="hover:text-[#96eefb] transition-all">About</Link>
-          <Link href="/projects" className="hover:text-[#96eefb] transition-all">Projects</Link>
-          <Link href="/blog" className="hover:text-[#96eefb] transition-all">Blog</Link>
-          <Link href="/contact" className="hover:text-[#96eefb] transition-all">Contact</Link>
+          <Link href="/" className="hover:text-[#8B7E66] transition-all">Home</Link>
+          <Link href="/about" className="hover:text-[#8B7E66] transition-all">About</Link>
+          <Link href="/projects" className="hover:text-[#8B7E66] transition-all">Projects</Link>
+          <Link href="/blog" className="hover:text-[#8B7E66] transition-all">Blog</Link>
+          <Link href="/contact" className="hover:text-[#8B7E66] transition-all">Contact</Link>
         </div>
 
         {/* Hamburger Icon */}

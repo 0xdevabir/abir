@@ -27,7 +27,7 @@ const Projects = () => {
                     alt="Abir"
                     width={800}
                     height={800}
-                    className="cover h-auto w-auto rounded-xl "
+                    className="cover h-auto w-auto rounded-xl"
                     />
                     <div className="bg-[#1b1b1be5] cursor-pointer absolute top-0 w-[100%] h-[100%] rounded-xl ProjectCardContent">
                       <div className="h-[100%] w-[100%] p-[2vh]">

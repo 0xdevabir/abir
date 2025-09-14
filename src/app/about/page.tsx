@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Loadertwo from '@/components/loadertwo';
+import Image from 'next/image';
 
 export default function About() {
   const [, setIsLoading] = useState(true);
@@ -24,12 +25,25 @@ export default function About() {
   return (
     <div className="">
       <Loadertwo/>
-      <div className="fixed top-0 left-0 w-full h-full bg-[white] z-0 flex items-center justify-center" data-aos="fade-up">
-        <h1 className="text-4xl font-extrabold text-gray-800" >WebNest</h1>
+
+        
+      <div className="flex justify-center h-[100vh] items-center">
+        <div className="" data-aos="fade-up">
+            <div className="flex justify-center">
+              <Image src="/maintenance.png" alt="Logo" width={200} height={200} className="mb-4" />
+            </div>
+           <h1 className="text-4xl font-extrabold text-gray-800" >In Maintenance</h1>
+        </div>
+      </div>
+
+
+      {/* <div className="fixed top-0 left-0 w-full h-full bg-[white] z-0 flex items-center justify-center" data-aos="fade-up">
+        
+        
       </div>
     <main className="min-h-screen bg-gray-100 flex items-center justify-center">
       <h1 className="text-5xl font-bold">Welcome to WebNest</h1>
-    </main>
+    </main> */}
     </div>
 
 

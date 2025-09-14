@@ -72,7 +72,7 @@ export default function Loadertwo() {
 
           {/* Background */}
           <motion.div 
-            className="absolute inset-0 bg-black"
+            className="absolute inset-0 bg-[white]"
             initial={{ opacity: 1 }}
             animate={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 1.8 }}
@@ -80,17 +80,17 @@ export default function Loadertwo() {
 
           {/* Curved reveal overlay */}
           <motion.div
-            className="absolute top-0 left-0 w-full h-[120vh] bg-[#1B1B1B] origin-bottom"
+            className="absolute top-0 left-0 w-full h-[120vw] bg-[#1B1B1B] origin-bottom"
             style={{
-              borderBottomLeftRadius: "40% 20%",
-              borderBottomRightRadius: "40% 20%"
+              borderBottomLeftRadius: "0% 0%",
+              borderBottomRightRadius: "0% 0%"
             }}
             initial={{ y: 0 }}
             animate={{ y: "-100%" }}
             transition={{ 
-              duration: 1.4,
+              duration: 1.6,
               ease: [0.76, 0, 0.24, 1],
-              delay: 1.5 
+              delay: 0.4
             }}
           />
         </motion.div>

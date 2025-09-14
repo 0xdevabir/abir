@@ -49,7 +49,7 @@ export default function Home() {
         <div className="bg-[#F5F5DC] h-[100vh] w-[100%] fixed bottom-0">
           <div className={oswald.className}>
             <div className="flex flex-col justify-center pt-[22vh] md:pt-[20vh]  ">
-              <div data-aos='fade-in' data-aos-delay="1600"><p className='text-center text-[5vw] md:text-[1.8vw] font-[300]'>👋🏻, my name is Abir and I am a Freelancer</p></div>
+              <div data-aos='fade-in' data-aos-delay="1600"><p className='text-center text-[5vw] md:text-[1.8vw] font-[300]'>👋🏻, my name is Abir and I am a Computer Engineer</p></div>
               <div className="leading-[12vh] md:leading-[18vh] ">
                 <div data-aos='fade-right' data-aos-delay="1600"><p className='text-center text-[15vw] md:text-[10vw] font-[700] cursor-pointer text-stroke1'><span className='stroke01'>W</span><span className='stroke02'>e</span><span className='stroke03'>b</span><span className='stroke04'>d</span><span className='stroke05'>e</span><span className='stroke06'>v</span><span className='stroke07'>e</span><span className='stroke08'>l</span><span className='stroke09'>o</span><span className='stroke10'>p</span><span className='stroke11'>e</span><span className='stroke12'>r</span></p></div>
                 <div className=' relative z-[0] imageShowHover' data-aos='fade-left' data-aos-delay="1600"><p className=' text-center text-[15vw] md:text-[10vw] font-[700]  cursor-pointer'><span className='text-stroke2'>& <span className='sm:hidden'> <br className='sm:hidde' /> </span> App Developer</span></p></div>
