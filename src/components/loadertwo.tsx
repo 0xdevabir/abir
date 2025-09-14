@@ -80,7 +80,7 @@ export default function Loadertwo() {
 
           {/* Curved reveal overlay */}
           <motion.div
-            className="absolute top-0 left-0 w-full h-[120vw] bg-[#1B1B1B] origin-bottom"
+            className="absolute top-0 left-0 w-full h-[120vh] bg-[#1B1B1B] origin-bottom"
             style={{
               borderBottomLeftRadius: "0% 0%",
               borderBottomRightRadius: "0% 0%"
